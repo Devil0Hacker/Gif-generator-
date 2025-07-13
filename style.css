@@ -1,0 +1,36 @@
+
+body {
+  font-family: sans-serif;
+  background: #fafafa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark {
+  background: #121212;
+  color: #fff;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+input, select {
+  margin: 10px;
+  padding: 10px;
+  width: 80%;
+}
+.effects {
+  margin: 10px 0;
+}
+.actions button {
+  margin: 5px;
+}
+.preview {
+  margin-top: 20px;
+  border: 2px dashed #ccc;
+  padding: 20px;
+  min-height: 100px;
+}

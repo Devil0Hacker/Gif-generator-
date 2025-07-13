@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Giftagram - Festival GIF Generator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🎁 Giftagram</h1>
+    <select id="template">
+      <option value="birthday">🎂 Birthday</option>
+      <option value="diwali">🪔 Diwali</option>
+    </select>
+
+    <input type="text" id="nameInput" placeholder="Enter your name" />
+    <input type="text" id="messageInput" placeholder="Enter your message" />
+
+    <label for="themeColor">🎨 Pick a Theme Color:</label>
+    <input type="color" id="themeColor" value="#ff9800"/>
+
+    <label for="fontSelect">🔤 Font Style:</label>
+    <select id="fontSelect">
+      <option value="sans-serif">Sans</option>
+      <option value="cursive">Cursive</option>
+      <option value="serif">Serif</option>
+      <option value="monospace">Monospace</option>
+    </select>
+
+    <div class="effects">
+      <label><input type="checkbox" id="confetti"/> 🎉 Confetti</label>
+      <label><input type="checkbox" id="sparkle"/> ✨ Sparkle</label>
+    </div>
+
+    <div class="actions">
+      <button onclick="generateGIF()">✨ Generate</button>
+      <button onclick="downloadGIF()">📥 Download</button>
+      <button onclick="toggleDarkMode()">🌗 Toggle Mode</button>
+      <button onclick="saveTemplate()">💾 Save</button>
+      <button onclick="loadTemplate()">📂 Load</button>
+    </div>
+
+    <div id="preview" class="preview">
+      <h2 id="previewMessage">Your GIF Preview will appear here</h2>
+    </div>
+
+    <div id="countdown"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
